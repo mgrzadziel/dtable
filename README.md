@@ -1,6 +1,6 @@
-# Dynamic table base on json data
+# Dynamic table based on json data
 
-This is simple skeleton project to show basic functionality - generate dynamic table from json object 
+This is simple projects skeleton that shows basic functionalities - generates dynamic table from json object 
 
 
 ## How to use
