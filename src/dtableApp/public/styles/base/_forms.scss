@@ -1,0 +1,8 @@
+/**
+ * Adds and asterisk to the required form fields labels
+ */
+.required label::after {
+  content: '*';
+  color: red;
+  margin-left: 5px;
+}

@@ -1,0 +1,18 @@
+/**
+ * Resets bottom margin. This is mainly for the jumbotron or navbar components, due to their default margin.
+ */
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.no-margin-top {
+  margin-top: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}

@@ -1,0 +1,29 @@
+/**
+ * These two rules applies to navigation. We need to have two separate navigations because of the way angular-ui-bootstrap handles collapsible elements so we need to apply visible-xs class to the mobile menu, which has the !important statement to the display property. Collapsible elements does not have one, so they are always visible, and that's the small fix that prevents that behavior.
+ */
+.visible-xs.collapse {
+  display: none !important;
+}
+
+.visible-xs.collapse.in {
+  display: block !important;
+}
+
+/**
+ * Make all textareas in angular-xeditable full width and disable resize
+ */
+.editable-textarea {
+  width: 100%;
+
+  textarea {
+    width: 100%;
+    resize: none;
+  }
+}
+
+/**
+ * Adds some space to the badges in single project view.
+ */
+.project-badge {
+  margin-right: 5px;
+}

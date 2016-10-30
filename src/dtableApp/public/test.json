@@ -1,0 +1,12 @@
+[
+    {
+        "Name": "teenant1",
+        "Id": 0,
+        "type": "GlobalObject"
+    },
+    {
+        "Name": "teenant2",
+        "Id": 1,
+        "type": "GlobalObject"
+    }
+]

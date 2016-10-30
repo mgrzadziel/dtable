@@ -1,0 +1,17 @@
+<!-- Fixed navbar -->
+<nav class="navbar">
+    <div id="navbar">
+        <ul class="nav navbar-nav">
+            <li><a ng-link="['/Home']"><strong>dtable</strong></a></li>
+
+            <li><a ng-link="['/Dashboard', {id: 1}]"> Example 1  </a></li>
+            <li><a ng-link="['/Dashboard' , {id: 2}]"> Example 2  </a></li>
+            <li><a ng-link="['/Dashboard' , {id: 4}]"> Example 4  </a></li>
+            <li><a ng-link="['/Dashboard', {id: 3}]"> Example big object  </a></li>
+        </ul>
+    </div><!--/.nav-collapse -->
+</nav>
+
+<main>
+    <ng-outlet></ng-outlet>
+</main>

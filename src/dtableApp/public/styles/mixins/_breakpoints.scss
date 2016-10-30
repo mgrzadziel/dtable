@@ -1,0 +1,22 @@
+// Maps for mixin (based on bootstrap variables!)
+$mobile: (max: $screen-xs-max);
+$tablet: (min: $screen-sm-min);
+$tablet-only: (min: $screen-sm-min, max: $screen-sm-max);
+$up-to-tablet: (max: $screen-sm-max);
+$desktop-small: (min: $screen-md-min);
+$desktop-small-only: (min: $screen-md-min, max: $screen-md-max);
+$up-to-desktop-small: (max: $screen-md-max);
+$desktop-large: (min: $screen-lg-min);
+
+/**
+ * Creates a @media query using one of the predefined map or a curstom one
+ * passed as a parameter.
+ * @param {map} $map (min:string, max:string)
+ */
+@mixin breakpoint($map) {
+  $query: "";
+  @if map-has-key($map, min) { $query: append($query, "(min-width: #{map-get($map, min)})") }
+  @if map-has-key($map, min) and map-has-key($map, max) { $query: append($query, "and") }
+  @if map-has-key($map, max) { $query: append($query, "(max-width: #{map-get($map, max)})") }
+  @media screen and #{$query} { @content; }
+}

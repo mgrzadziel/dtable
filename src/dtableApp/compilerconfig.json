@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "gulpfile.es5.js",
+    "inputFile": "gulpfile.js"
+  },
+  {
+    "outputFile": "build/build.es5.js",
+    "inputFile": "build/build.js"
+  },
+  {
+    "outputFile": "static/styles/style.css",
+    "inputFile": "static/styles/style.scss"
+  }
+]
